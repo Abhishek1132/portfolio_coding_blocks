@@ -1,0 +1,223 @@
+body{
+   background-color: black;
+   color: white;
+}
+
+.contact-btn{
+   margin-left: 30px;
+}
+.cbtn{
+   border-radius: 36px;
+   padding: 6px 25px 9px 25px;
+   color: white;
+   font-weight: bold;
+   background:linear-gradient(yellow,orange);
+   box-shadow: 1px 12px 48px 4px orange;
+   text-decoration: none;
+   outline: none;
+   border: none;
+   font-size: 1.1rem;
+}
+
+.cbtn:hover{
+   background: white !important;
+   color: orange !important;
+}
+
+.cards .card{
+   color: black;
+   margin: 5px 0px;
+   border-radius: 12px;
+}
+
+
+.cards{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0;
+}
+.cards .card .btn{
+   background-color: white;
+   transition: all .6s;
+   color:#0d6efd;
+   top: 70px;
+}
+
+.cards .card .btn:hover{
+   transform: scale(1.05);
+}
+
+.comp-img img{
+   min-width: 200px;
+   width: 75%;
+}
+
+
+.pcard{
+   background-color: rgb(31, 31, 31);
+   border-radius: 20px;
+   border-left: 1px solid gray;
+   border-top: 1px solid gray;
+   transition: all .3s;
+}
+
+.pcard:hover{
+   transform: translateY(-10px);
+}
+
+.pbtn{
+   background-color: rgba(24, 24, 24, 0.666);
+   border-radius: 30px;
+   border-top: 0;
+   border-right: 0;
+   border-left: 2px solid cyan;
+   border-bottom: 2px solid cyan;
+   padding: 8px 25px;
+   color: white;
+   transition: all .4s;
+}
+
+.pbtn:hover{
+   border-left: 0;
+   border-bottom: 0;
+   border-top: 2px solid cyan;
+   border-right: 2px solid cyan;
+}
+
+
+.box{
+   border: 6px solid lightblue;
+   border-radius: 16px;
+   background-color: rgb(57, 57, 57);
+   width: 75%;
+}
+
+
+.box button{
+   border-radius: 26px;
+}
+
+.footer{
+   background-color: gold;
+   height: 220px;
+}
+
+
+
+@media screen and (min-width:986px) {
+   #profilepic{
+      width: 65%;
+   }
+
+
+
+   #card1{
+      transform: translate(200px,50px);
+      animation-duration: 1.3s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;
+      transition: all .5s;
+   }
+
+   #card2{
+      transform: translate(-400px,0);
+      animation-duration: 1.3s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;
+      transition: all .5s;
+   }
+
+   #card3{
+      transform: translate(150px,-100px);
+      animation-duration: 1.3s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;
+      transition: all .5s;
+   }
+
+   .card1{
+      transform: translate(100px,50px);
+      animation-name: anim1;
+   }
+   .card2{
+      transform: translate(-300px,0);
+      animation-name: anim2;
+   }
+   .card3{
+      transform: translate(50px,-100px);
+      animation-name: anim3;
+      
+   }
+
+   .revcard1{
+      animation-name: revanim1;
+   }
+   .revcard2{
+      animation-name: revanim2;
+   }
+   .revcard3{
+      animation-name: revanim3;
+      
+   }
+
+
+
+   .box{
+      width: 50%;
+   }
+
+
+   @keyframes anim1 {
+      0%{
+         transform: translate(200px,50px);
+      }
+      100%{
+         transform: translate(100px,50px);
+      }
+   }
+   @keyframes anim2 {
+      0%{
+         transform: translate(-400px,0);
+      }
+      100%{
+         transform: translate(-300px,0);
+      }
+   }
+   @keyframes anim3 {
+      0%{
+         transform: translate(150px,-100px);
+      }
+      100%{
+         transform: translate(50px,-100px);
+      }
+   }
+
+   @keyframes revanim1 {
+      0%{
+        
+         transform: translate(100px,50px);
+      }
+      100%{
+         transform: translate(200px,50px);
+      }
+   }
+   @keyframes revanim2 {
+      0%{
+         transform: translate(-300px,0);
+      }
+      100%{
+         
+         transform: translate(-400px,0);
+      }
+   }
+   @keyframes revanim3 {
+      0%{
+         transform: translate(50px,-100px);
+      }
+      100%{
+         
+         transform: translate(150px,-100px);
+      }
+   }
+}
